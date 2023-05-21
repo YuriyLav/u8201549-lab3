@@ -4,7 +4,7 @@ namespace App\Domain\Companies\Actions;
 
 use App\Domain\Companies\Models\Company;
 
-class PatchCompanyAction
+class ReplaceCompanyAction
 {
     public function execute(int $id, array $fields): Company
     {
