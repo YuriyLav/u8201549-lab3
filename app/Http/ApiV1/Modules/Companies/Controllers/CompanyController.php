@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\ApiV1\Modules\Books\Controllers;
+namespace App\Http\ApiV1\Modules\Companies\Controllers;
 
 use App\Domain\Companies\Models\Company;
 use App\Domain\Companies\Actions\CreateCompanyAction;
@@ -32,7 +32,7 @@ class CompanyController
         $action->execute($id);
         return new EmptyResource();
     }
-    public function getCar(int $id): CompanyResource
+    public function get(int $id): CompanyResource
     {
         return new CompanyResource(Company::findOrFail($id));
     }

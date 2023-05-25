@@ -4,7 +4,7 @@ namespace App\Domain\Departments\Actions;
 
 use App\Domain\Departments\Models\Department;
 
-class PatchCompanyAction
+class PatchDepartmentAction
 {
     public function execute(int $id, array $fields): Department
     {
