@@ -18,11 +18,11 @@ Route::delete('v1/departments/{id}', [DepartmentController::class, 'delete']);
 Route::put('v1/departments/{id}', [DepartmentController::class, 'replace']);
 Route::patch('v1/departments/{id}', [DepartmentController::class, 'patch']);
 
-Route::post('v1/employess', [EmployeeController::class, 'create']);
-Route::get('/v1/employess/{id}', [EmployeeController::class, 'get']);
-Route::delete('v1/employess/{id}', [EmployeeController::class, 'delete']);
-Route::put('v1/employess/{id}', [EmployeeController::class, 'replace']);
-Route::patch('v1/employess/{id}', [EmployeeController::class, 'patch']);
+Route::post('v1/employees', [EmployeeController::class, 'create']);
+Route::get('/v1/employees/{id}', [EmployeeController::class, 'get']);
+Route::delete('v1/employees/{id}', [EmployeeController::class, 'delete']);
+Route::put('v1/employees/{id}', [EmployeeController::class, 'replace']);
+Route::patch('v1/employees/{id}', [EmployeeController::class, 'patch']);
 
 Route::fallback(function () {
     return response()->json(
