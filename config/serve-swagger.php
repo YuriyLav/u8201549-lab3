@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'path' => 'api/docs',
+    'path' => 'docs/swagger',
     'urls' => [
         [
-            'url' => 'docs/swagger.yaml',
-            'name' => 'swagger'
+            'url' => 'openapi.yaml',
+            'name' => 'ApiV1'
         ]
     ],
 ];
