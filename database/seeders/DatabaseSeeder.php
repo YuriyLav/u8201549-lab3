@@ -4,6 +4,9 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Domain\Companies\Models\Company;
+use App\Domain\Departments\Models\Department;
+use App\Domain\Employees\Models\Employee;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,11 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        Company::factory()->count(100)->create();
+        Department::factory()->count(100)->create();
+        Employee::factory()->count(100)->create();
     }
 }
